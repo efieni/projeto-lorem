@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Bebas Neue', sans-serif;
+    --fonte3: 'Quicksand', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: skyblue;
+    text-align: center;
+    color: rgb(228, 227, 227);
+    padding: 10px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.216);
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    color: rgb(228, 227, 227);
+}
+
+header > p{
+    font-family: var(--fonte3);
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: rgb(228, 227, 227);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 1.9em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vw;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.normal > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(241, 239, 239);
+    text-shadow: 1 px 1px 0 black;
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(157, 214, 237, 0.43);
+    padding: 5px;
+    text-shadow: 1px 1px 0 black;
+}
+
+section.imagem{
+    background-color: rgba(180, 219, 234, 0.505);
+    color: rgb(228, 227, 227);
+    background-position: right;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+section#img{
+    background-image: url(../imagens/cigarro.png);
+}
+footer{
+    background-color: skyblue;
+    font-family: var(--fonte3);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
